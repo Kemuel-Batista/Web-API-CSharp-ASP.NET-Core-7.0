@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApiYoutube.Services;
+using WebApiYoutube.Application.Services;
 
 namespace WebApiYoutube.Controllers
 {

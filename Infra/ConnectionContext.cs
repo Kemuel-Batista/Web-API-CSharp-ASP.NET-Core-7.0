@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebApiYoutube.Models;
+using WebApiYoutube.Domain.Models;
 
 namespace WebApiYoutube.Infra
 {

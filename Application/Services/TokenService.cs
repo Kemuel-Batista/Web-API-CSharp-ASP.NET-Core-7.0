@@ -2,9 +2,9 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using WebApiYoutube.Models;
+using WebApiYoutube.Domain.Models;
 
-namespace WebApiYoutube.Services
+namespace WebApiYoutube.Application.Services
 {
     public class TokenService
     {

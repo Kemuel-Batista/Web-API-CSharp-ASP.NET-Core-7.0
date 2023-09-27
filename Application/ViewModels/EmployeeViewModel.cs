@@ -1,4 +1,4 @@
-﻿namespace WebApiYoutube.ViewModels
+﻿namespace WebApiYoutube.Application.ViewModels
 {
     public class EmployeeViewModel
     {
