@@ -12,7 +12,7 @@ namespace WebApiYoutube.Controllers
         {
             if (username == "filipe" && password == "123456")
             {
-                var token = TokenService.GenerateToken(new Domain.Models.Employee());
+                var token = TokenService.GenerateToken(new Domain.Models.EmployeeAggregate.Employee());
                 return Ok(token);
             }
 

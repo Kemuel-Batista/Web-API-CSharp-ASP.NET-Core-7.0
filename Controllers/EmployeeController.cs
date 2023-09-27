@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApiYoutube.Application.ViewModels;
 using WebApiYoutube.Domain.DTOs;
-using WebApiYoutube.Domain.Models;
+using WebApiYoutube.Domain.Models.EmployeeAggregate;
 
 namespace WebApiYoutube.Controllers
 {

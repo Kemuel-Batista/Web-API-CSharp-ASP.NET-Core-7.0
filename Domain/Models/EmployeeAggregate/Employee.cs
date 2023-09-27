@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebApiYoutube.Domain.Models
+namespace WebApiYoutube.Domain.Models.EmployeeAggregate
 {
     [Table("employee")]
     public class Employee

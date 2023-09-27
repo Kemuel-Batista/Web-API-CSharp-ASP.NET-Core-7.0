@@ -1,6 +1,6 @@
 ﻿using WebApiYoutube.Domain.DTOs;
 
-namespace WebApiYoutube.Domain.Models
+namespace WebApiYoutube.Domain.Models.EmployeeAggregate
 {
     public interface IEmployeeRepository
     {

@@ -2,7 +2,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using WebApiYoutube.Domain.Models;
+using WebApiYoutube.Domain.Models.EmployeeAggregate;
 
 namespace WebApiYoutube.Application.Services
 {

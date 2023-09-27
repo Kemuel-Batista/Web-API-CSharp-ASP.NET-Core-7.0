@@ -1,5 +1,5 @@
 ﻿using WebApiYoutube.Domain.DTOs;
-using WebApiYoutube.Domain.Models;
+using WebApiYoutube.Domain.Models.EmployeeAggregate;
 
 namespace WebApiYoutube.Infra.Repositories
 {
