@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebApiYoutube.Models;
 using WebApiYoutube.ViewModels;
 
@@ -29,6 +30,7 @@ namespace WebApiYoutube.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpPost]
         [Route("{id}/download")]
         public IActionResult DownloadPhoto(int id)
@@ -40,6 +42,7 @@ namespace WebApiYoutube.Controllers
             return File(dataBytes, "image/png");
         }
 
+        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {
