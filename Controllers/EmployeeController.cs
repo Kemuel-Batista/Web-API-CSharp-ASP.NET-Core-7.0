@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WebApiYoutube.Models;
-using WebApiYoutube.ViewModels;
+using WebApiYoutube.Application.ViewModels;
+using WebApiYoutube.Domain.DTOs;
+using WebApiYoutube.Domain.Models;
 
 namespace WebApiYoutube.Controllers
 {
@@ -11,11 +13,13 @@ namespace WebApiYoutube.Controllers
     {
         private readonly IEmployeeRepository _employeeRepository;
         private readonly ILogger<EmployeeController> _logger;
+        private readonly IMapper _mapper;
 
-        public EmployeeController(IEmployeeRepository employeeRepository, ILogger<EmployeeController> logger)
+        public EmployeeController(IEmployeeRepository employeeRepository, ILogger<EmployeeController> logger, IMapper mapper)
         {
             _employeeRepository = employeeRepository ?? throw new ArgumentNullException(nameof(employeeRepository));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
         [HttpPost]
@@ -55,6 +59,17 @@ namespace WebApiYoutube.Controllers
             //_logger.LogInformation("Teste");
 
             return Ok(employees);
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public IActionResult Search(int id)
+        {
+            var employess = _employeeRepository.Get(id);
+
+            var employeesDTOS = _mapper.Map<EmployeeDTO>(employess);
+
+            return Ok(employeesDTOS);
         }
     }
 }

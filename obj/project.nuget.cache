@@ -1,14 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "64dFE0Juxc50E521UP2sHRBe7vP1S1G5zLKW1oPfN5Zb6XmvSTYMFxb8BsMVL8ia0wxFTNYF7PdCIccHMSpngw==",
+  "dgSpecHash": "NBnDOSYhR0I44P/LMLd10jUPCob5wVvnqgG8Jgyczy3TMUNUs5OjXOa7GwR2qgaBAyJvJ+o6yEhqXereqj29Ug==",
   "success": true,
   "projectFilePath": "C:\\Users\\supor\\www\\Web-API-CSharp-ASP.NET-Core-7.0\\WebApiYoutube.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\supor\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\supor\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\supor\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\supor\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.11\\microsoft.aspnetcore.authentication.jwtbearer.7.0.11.nupkg.sha512",
     "C:\\Users\\supor\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\7.0.11\\microsoft.aspnetcore.authentication.negotiate.7.0.11.nupkg.sha512",
     "C:\\Users\\supor\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.11\\microsoft.aspnetcore.connections.abstractions.7.0.11.nupkg.sha512",
     "C:\\Users\\supor\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.11\\microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
+    "C:\\Users\\supor\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\supor\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\supor\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
     "C:\\Users\\supor\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.11\\microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",
