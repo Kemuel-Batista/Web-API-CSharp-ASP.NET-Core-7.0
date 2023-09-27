@@ -14,12 +14,30 @@ namespace WebApiYoutube.Controllers
         {
             _employeeRepository = employeeRepository;
         }
+
         [HttpPost]
-        public IActionResult Add(EmployeeViewModel employeeView)
+        public IActionResult Add([FromForm] EmployeeViewModel employeeView)
         {
-            var employee = new Employee(employeeView.Name, employeeView.Age, null);
+            // Pegando o caminho relativo da foto para salvar no banco de dados
+            var filePath = Path.Combine("storage", employeeView.Photo.FileName);
+            // Utilizando o stream para salvar na pasta storage nos arquivos locais
+            using Stream FileStream = new FileStream(filePath, FileMode.Create);
+            employeeView.Photo.CopyTo(FileStream);
+
+            var employee = new Employee(employeeView.Name, employeeView.Age, filePath);
             _employeeRepository.Add(employee);
             return Ok();
+        }
+
+        [HttpPost]
+        [Route("{id}/download")]
+        public IActionResult DownloadPhoto(int id)
+        {
+            var employee = _employeeRepository.Get(id);
+
+            var dataBytes = System.IO.File.ReadAllBytes(employee.photo);
+
+            return File(dataBytes, "image/png");
         }
 
         [HttpGet]

@@ -16,5 +16,10 @@ namespace WebApiYoutube.Infra
         {
             return _context.Employees.ToList();
         }
+
+        public Employee? Get(int id)
+        {
+            return _context.Employees.Find(id);
+        }
     }
 }
